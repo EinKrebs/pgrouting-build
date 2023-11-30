@@ -1,0 +1,65 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+# Enable hardening build flags
+export DEB_BUILD_MAINT_OPTIONS=hardening=+all
+
+# Don't fail when d/control doesn't match template
+export PG_UPDATECONTROL=yes
+
+CFLAGS   += $(CPPFLAGS)
+CXXFLAGS += $(CPPFLAGS)
+
+include /usr/share/postgresql-common/pgxs_debian_control.mk
+
+%:
+	dh $@
+
+override_dh_auto_clean:
+	+pg_buildext clean build-%v
+
+override_dh_auto_configure:
+	set -e; \
+	for v in $$(pg_buildext supported-versions); do \
+		cmake -H. -Bbuild-$$v -DWITH_DOC=ON -DPOSTGRESQL_PG_CONFIG=/usr/lib/postgresql/$$v/bin/pg_config -DCMAKE_VERBOSE_MAKEFILE=1; \
+	done
+
+override_dh_auto_build:
+	+pg_buildext build build-%v
+	set -e; \
+	for v in $$(pg_buildext supported-versions); do \
+		make -C build-$$v doc; \
+		rm build-$$v/doc/html/en/_static/images/pgrouting.png; \
+		ln -s ../pgrouting.png build-$$v/doc/html/en/_static/images/pgrouting.png; \
+		rm build-$$v/doc/html/en/_static/images/ccbysa.png; \
+		ln -s ../../_images/ccbysa.png build-$$v/doc/html/en/_static/images/ccbysa.png; \
+		ln -s /usr/share/javascript/mathjax build-$$v/doc/html/en/_static/mathjax; \
+	done
+
+override_dh_auto_install:
+	+pg_buildext install build-%v postgresql-%v-pgrouting
+	set -e; \
+	for v in $$(pg_buildext supported-versions); do \
+		mkdir -p debian/postgresql-$$v-pgrouting-doc/usr/share/doc/postgresql-$$v-pgrouting-doc; \
+		cp -r build-$$v/doc/html debian/postgresql-$$v-pgrouting-doc/usr/share/doc/postgresql-$$v-pgrouting-doc; \
+		mkdir -p debian/postgresql-$$v-pgrouting-doc/usr/share/doc-base; \
+		sed "s,PGVERSION,$$v,g" < debian/postgresql-pgrouting-doc.doc-base.in > debian/postgresql-$$v-pgrouting-doc/usr/share/doc-base/postgresql-$$v-pgrouting-doc; \
+		mkdir -p debian/postgresql-$$v-pgrouting-scripts/usr; \
+		mv debian/postgresql-$$v-pgrouting/usr/share debian/postgresql-$$v-pgrouting-scripts/usr; \
+		rdfind -makeresultsfile false -makehardlinks true \
+			debian/postgresql-$$v-pgrouting-scripts/usr/share/postgresql/*/extension; \
+	done
+
+override_dh_installchangelogs:
+	dh_installchangelogs doc/src/release_notes.rst
+
+override_dh_sphinxdoc-indep:
+	dh_sphinxdoc -Xtheme_extras.js
+
+override_dh_sphinxdoc-arch:
+
+override_dh_makeshlibs:
+	dh_makeshlibs -Xusr/lib/postgresql

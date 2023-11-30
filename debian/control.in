@@ -1,0 +1,87 @@
+Source: pgrouting
+Maintainer: Debian GIS Project <pkg-grass-devel@lists.alioth.debian.org>
+Uploaders: Michael Fladischer <fladi@debian.org>
+Section: misc
+Priority: optional
+Build-Depends: cmake (>= 3.2),
+               debhelper-compat (= 13),
+               dh-sequence-sphinxdoc,
+               graphviz,
+               libboost-graph-dev,
+               libjs-mathjax,
+               postgis,
+               postgresql-server-dev-all,
+               python3-sphinx (>= 1.8),
+               rdfind,
+Standards-Version: 4.6.2
+Vcs-Browser: https://salsa.debian.org/debian-gis-team/pgrouting
+Vcs-Git: https://salsa.debian.org/debian-gis-team/pgrouting.git
+Homepage: https://www.pgrouting.org
+Rules-Requires-Root: no
+
+Package: postgresql-PGVERSION-pgrouting
+Architecture: any
+Depends: postgresql-PGVERSION-pgrouting-scripts (>= ${source:Version}),
+         postgresql-PGVERSION,
+         postgresql-PGVERSION-postgis,
+         postgresql-PGVERSION-postgis-scripts,
+         ${postgresql:Depends},
+         ${shlibs:Depends},
+         ${misc:Depends}
+Suggests: postgresql-PGVERSION-pgrouting-doc
+Description: Routing functionality support for PostgreSQL/PostGIS
+ pgRouting extends the PostGIS/PostgreSQL geospatial database to provide
+ geospatial routing and other network analysis functionality.
+ .
+ This package supports PostgreSQL PGVERSION.
+
+Package: postgresql-PGVERSION-pgrouting-scripts
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Description: Routing functionality support for PostgreSQL/PostGIS - SQL scripts
+ pgRouting extends the PostGIS/PostgreSQL geospatial database to provide
+ geospatial routing and other network analysis functionality.
+ .
+ This package contains the SQL scripts for installing pgRouting, and for
+ upgrading from earlier pgRouting versions.
+ .
+ This package supports PostgreSQL PGVERSION.
+
+Package: postgresql-PGVERSION-pgrouting-doc
+Architecture: all
+Multi-Arch: foreign
+Section: doc
+Depends: libjs-mathjax,
+         ${sphinxdoc:Depends},
+         ${misc:Depends}
+Description: Routing functionality support for PostgreSQL/PostGIS (Documentation)
+ pgRouting extends the PostGIS/PostgreSQL geospatial database to provide
+ geospatial routing and other network analysis functionality.
+ .
+ This package contains the documentation.
+
+Package: postgresql-pgrouting
+Architecture: any
+Section: metapackages
+Depends: postgresql-pgrouting-scripts,
+         postgresql-PGVERSION-pgrouting,
+         ${misc:Depends}
+Description: Routing functionality support for PostgreSQL/PostGIS - Metapackage
+ pgRouting extends the PostGIS/PostgreSQL geospatial database to provide
+ geospatial routing and other network analysis functionality.
+ .
+ This metapackage depends on the PgRouting package for PostgreSQL PGVERSION.
+
+Package: postgresql-pgrouting-scripts
+Architecture: all
+Multi-Arch: foreign
+Section: metapackages
+Depends: postgresql-PGVERSION-pgrouting-scripts,
+         ${misc:Depends}
+Description: Routing functionality support for PostgreSQL/PostGIS - SQL scripts metapackage
+ pgRouting extends the PostGIS/PostgreSQL geospatial database to provide
+ geospatial routing and other network analysis functionality.
+ .
+ This metapackage depends on the PgRouting scripts package for
+ PostgreSQL PGVERSION.

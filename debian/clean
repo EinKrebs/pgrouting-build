@@ -1,0 +1,12 @@
+lib/pgrouting--2.0.0.sql
+lib/pgrouting--2.0.0.sql.in
+lib/pgrouting.control
+lib/pgrouting.sql
+lib/pgrouting_dd_legacy.sql
+lib/pgrouting_legacy.sql
+locale/*/LC_MESSAGES/*.mo
+src/version/version.h
+
+debian/postgresql-*-pgrouting.install
+debian/postgresql-*-pgrouting-scripts.install
+

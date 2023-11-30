@@ -1,0 +1,9 @@
+Document: postgresql-PGVERSION-pgrouting-doc
+Title: pgRouting Manual
+Author: pgRouting Contributors
+Section: Data Management
+
+Format: HTML
+Index: /usr/share/doc/postgresql-PGVERSION-pgrouting-doc/html/en/index.html
+Files: /usr/share/doc/postgresql-PGVERSION-pgrouting-doc/html/en/*.html
+

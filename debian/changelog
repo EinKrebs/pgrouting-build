@@ -1,0 +1,724 @@
+pgrouting (3.5.1-1.pgdg22.04+1) jammy-pgdg; urgency=medium
+
+  * Rebuild for jammy-pgdg.
+  * No source changes.
+
+ -- PostgreSQL on Debian and Ubuntu <pgsql-pkg-debian@lists.postgresql.org>  Wed, 27 Sep 2023 15:08:58 +0200
+
+pgrouting (3.5.1-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Update copyright file.
+  * Refresh patches.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Wed, 27 Sep 2023 15:08:58 +0200
+
+pgrouting (3.5.0-3) unstable; urgency=medium
+
+  * Team upload.
+  * Add ${postgresql:Depends} to Depends.
+  * Move from experimental to unstable.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sun, 17 Sep 2023 11:43:01 +0200
+
+pgrouting (3.5.0-3~exp1) experimental; urgency=medium
+
+  * Team upload.
+  * Update packaging for postgresql-16.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sat, 16 Sep 2023 18:44:52 +0200
+
+pgrouting (3.5.0-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Bas Couwenberg ]
+  * Bump debhelper compat to 13.
+  * Remove generated files in clean target.
+    (closes: #1046632)
+  * Switch to dh-sequence-*.
+  * Update email address for Michael Fladischer.
+    (closes: #1051640)
+
+  [ Christoph Berg ]
+  * debian/pgversions: Bump to 12+ to match PostGIS.
+
+ -- Christoph Berg <myon@debian.org>  Wed, 13 Sep 2023 19:24:12 +0200
+
+pgrouting (3.5.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * Move from experimental to unstable.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sun, 11 Jun 2023 13:49:10 +0200
+
+pgrouting (3.5.0-1~exp1) experimental; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Enable Salsa CI.
+  * Bump Standards-Version to 4.6.2, no changes.
+  * Refresh patches.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Wed, 08 Mar 2023 17:05:48 +0100
+
+pgrouting (3.4.2-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Add Rules-Requires-Root to control file.
+  * Update copyright file.
+  * Drop reproducible builds patches, applied upstream.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sat, 03 Dec 2022 09:17:46 +0100
+
+pgrouting (3.4.1-2) unstable; urgency=medium
+
+  * Team upload.
+  * Move from experimental to unstable.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sat, 15 Oct 2022 21:48:17 +0200
+
+pgrouting (3.4.1-2~exp1) experimental; urgency=medium
+
+  * Team upload.
+  * Add patches by Vagrant Cascadian for reproducible builds.
+    (closes: #1021799, #1021800)
+  * Add metapackages to help upgrade the pgrouting packages.
+  * Update packaging for postgresql-15.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sat, 15 Oct 2022 08:13:23 +0200
+
+pgrouting (3.4.1-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Refresh patches.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Wed, 12 Oct 2022 06:17:22 +0200
+
+pgrouting (3.4.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Update copyright file.
+  * Refresh patches.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Fri, 07 Oct 2022 06:57:08 +0200
+
+pgrouting (3.3.3-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Christoph Berg ]
+  * Bump debian/pgversions to 11+ to match PostGIS.
+
+  [ Bas Couwenberg ]
+  * New upstream release.
+  * Refresh patches.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Thu, 06 Oct 2022 05:25:54 +0200
+
+pgrouting (3.3.2-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Bump Standards-Version to 4.6.1, no changes.
+  * Refresh patches.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sun, 28 Aug 2022 18:53:00 +0200
+
+pgrouting (3.3.1-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Update copyright file.
+  * Refresh patches.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Fri, 08 Apr 2022 06:52:28 +0200
+
+pgrouting (3.3.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * Allow building with sphinx < 4 for backports.
+
+ -- Christoph Berg <myon@debian.org>  Thu, 17 Feb 2022 14:43:51 +0100
+
+pgrouting (3.3.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Update copyright file.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Fri, 12 Nov 2021 18:51:42 +0100
+
+pgrouting (3.2.2-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sat, 23 Oct 2021 19:43:33 +0200
+
+pgrouting (3.2.1-2) unstable; urgency=medium
+
+  * Team upload.
+  * Move from experimental to unstable.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Fri, 08 Oct 2021 14:45:48 +0200
+
+pgrouting (3.2.1-2~exp1) experimental; urgency=medium
+
+  * Team upload.
+
+  [ Bas Couwenberg ]
+  * Bump Standards-Version to 4.6.0, no changes.
+  * Bump debhelper compat to 12, changes:
+    - Drop --list-missing from dh_install
+  * Update packaging for postgresql-14.
+
+  [ Christoph Berg ]
+  * Mark postgresql-*-pgrouting-{scripts,doc} as M-A: foreign.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Tue, 05 Oct 2021 21:54:51 +0200
+
+pgrouting (3.2.1-1) unstable; urgency=medium
+
+  * Team upload.
+  * Move from experimental to unstable.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sun, 15 Aug 2021 16:18:02 +0200
+
+pgrouting (3.2.1-1~exp1) experimental; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Update copyright file.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Thu, 29 Jul 2021 05:53:45 +0200
+
+pgrouting (3.2.0-1~exp1) experimental; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Update watch file for GitHub URL changes.
+  * Update copyright file.
+  * Refresh patches.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Wed, 26 May 2021 05:58:29 +0200
+
+pgrouting (3.1.3-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Update copyright file.
+  * Refresh patches.
+  * Add upstream metadata.
+  * Update lintian overrides.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sun, 24 Jan 2021 07:59:31 +0100
+
+pgrouting (3.1.2-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Bump Standards-Version to 4.5.1, no changes.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sat, 19 Dec 2020 19:18:48 +0100
+
+pgrouting (3.1.1-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Set PG_UPDATECONTROL=yes in rules file.
+  * Bump watch file version to 4.
+  * Update copyright years for pgRouting developers.
+  * Refresh patches.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Thu, 19 Nov 2020 17:09:04 +0100
+
+pgrouting (3.1.0-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Bas Couwenberg ]
+  * Don't ignore `pg_buildext clean` failure, issue is fixed.
+  * Move from experimental to unstable.
+
+  [ Christoph Berg ]
+  * debian/tests/create-extension: Use `pg_buildext installed-versions` to
+    make tests work even if the set of supported version has changed.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Thu, 08 Oct 2020 05:44:52 +0200
+
+pgrouting (3.1.0-2~exp1) experimental; urgency=medium
+
+  * Team upload.
+  * Update packaging for postgresql-13.
+  * Reorder rules.
+  * Ignore `pg_buildext clean` failure, see: #971517.
+  * Drop obsolete lintian overrides.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Thu, 01 Oct 2020 06:45:50 +0200
+
+pgrouting (3.1.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Refresh patches.
+  * Bump sphinx version requirement to 1.8.
+  * Add graphviz to build dependencies.
+  * Mark extension-no-version patch as Forwarded: not-needed.
+  * Update copyright file.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Tue, 04 Aug 2020 06:08:10 +0200
+
+pgrouting (3.0.2-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Update lintian overrides.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Tue, 14 Jul 2020 15:29:43 +0200
+
+pgrouting (3.0.1-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Update copyright file.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sat, 04 Jul 2020 20:20:46 +0200
+
+pgrouting (3.0.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Bump Standards-Version to 4.5.0, no changes.
+  * Bump debhelper compat to 10, changes:
+    - Drop --parallel option, enabled by default
+  * Drop obsolete repacking, .gitattributes removed upstream.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Thu, 21 May 2020 05:54:25 +0200
+
+pgrouting (3.0.0~rc1-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release candidate.
+  * Update copyright file.
+  * Refresh patches.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Tue, 03 Dec 2019 07:19:41 +0100
+
+pgrouting (3.0.0~beta-1) unstable; urgency=medium
+
+  * Team upload.
+  * Move from experimental to unstable.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Mon, 11 Nov 2019 05:51:15 +0100
+
+pgrouting (3.0.0~beta-1~exp2) experimental; urgency=medium
+
+  * Team upload.
+  * Update packaging for postgresql-12.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Tue, 29 Oct 2019 06:08:01 +0100
+
+pgrouting (3.0.0~beta-1~exp1) experimental; urgency=medium
+
+  * Team upload.
+  * New upstream beta release.
+  * Bump Standards-Version to 4.4.1, no changes.
+  * Add Provides for virtual package without PostgrSQL version.
+  * Update watch file to also match pre-releases.
+  * Drop CGAL build dependency, no longer required.
+  * Update copyright file, changes:
+    - Update copyright years for copyright holders
+    - Add new copyright holders
+    - Add license & copyright for Boost sources
+  * Refresh patches.
+  * Drop unused override for file-references-package-build-path.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sun, 20 Oct 2019 08:44:13 +0200
+
+pgrouting (2.6.3-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Thu, 05 Sep 2019 18:10:48 +0200
+
+pgrouting (2.6.2-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Bas Couwenberg ]
+  * Bump Standards-Version to 4.4.0, no changes.
+  * Drop unused override for testsuite-autopkgtest-missing.
+  * Update gbp.conf to use --source-only-changes by default.
+  * Drop python-sphinx build dependency.
+  * Add lintian override for file-references-package-build-path.
+
+  [ Christoph Berg ]
+  * Also depend on postgresql-PGVERSION-postgis-scripts, the postgis extension
+    is needed to create the pgrouting extension.
+  * Tests: create the extension.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sat, 27 Jul 2019 14:48:05 +0200
+
+pgrouting (2.6.2-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Tue, 04 Dec 2018 09:52:45 +0100
+
+pgrouting (2.6.1-2) unstable; urgency=medium
+
+  * Team upload.
+  * Drop unused lintian override.
+  * Move from experimental to unstable.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Fri, 12 Oct 2018 19:36:59 +0200
+
+pgrouting (2.6.1-2~exp1) experimental; urgency=medium
+
+  * Team upload.
+  * Update packaging for postgresql-11.
+  * Drop obsolete Breaks/Replaces.
+  * Update Homepage URL to use HTTPS.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Fri, 12 Oct 2018 07:39:35 +0200
+
+pgrouting (2.6.1-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Bas Couwenberg ]
+  * New upstream release.
+  * Bump Standards-Version to 4.2.1, no changes.
+  * Update watch file to limit matches to archive path.
+  * Fix incomplete-creative-commons-license issue.
+  * Add Maoguang Wang to copyright holders.
+
+  [ Christoph Berg ]
+  * Depend on postgresql-PGVERSION-postgis without the explicit PostGIS
+    version number.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sun, 23 Sep 2018 09:15:34 +0200
+
+pgrouting (2.6.0-3) unstable; urgency=medium
+
+  * Team upload.
+  * Drop autopkgtest to test installability.
+  * Add lintian override for testsuite-autopkgtest-missing.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Wed, 01 Aug 2018 15:29:43 +0200
+
+pgrouting (2.6.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * Update Vcs-* URLs for Salsa.
+  * Drop overrides for vcs-deprecated-in-debian-infrastructure.
+  * Bump Standards-Version to 4.1.5, no changes.
+  * Strip trailing whitespace from rules file.
+  * Bump pgversions to 9.4+ to match postgis.
+  * Add lintian override for spelling-error-in-binary false positive.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sun, 29 Jul 2018 13:21:42 +0200
+
+pgrouting (2.6.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Update copyright-format URL to use HTTPS.
+  * Add lintian overrides for vcs-deprecated-in-debian-infrastructure.
+  * Update copyright holders in copyright file.
+  * Refresh patches.
+  * Bump Standards-Version to 4.1.3, no changes.
+  * Drop unused override for hardening-no-fortify-functions.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Tue, 20 Mar 2018 17:17:00 +0100
+
+pgrouting (2.5.2-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Mon, 13 Nov 2017 07:45:24 +0100
+
+pgrouting (2.5.1-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Bump pgversions to 9.3+ to match postgis.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Fri, 13 Oct 2017 09:03:54 +0200
+
+pgrouting (2.5.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * Bump Standards-Version to 4.1.1, no changes.
+  * Update packaging for postgis 2.4.
+  * Move from experimental to unstable.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sat, 30 Sep 2017 11:21:09 +0200
+
+pgrouting (2.5.0-2~exp1) experimental; urgency=medium
+
+  * Team upload.
+
+  [ Christoph Berg ]
+  * Bump cmake build-dependency to 3.2, needed to support continue().
+
+  [ Bas Couwenberg ]
+  * Update packaging for postgresql 10.
+  * Bump Standards-Version to 4.1.0, no changes.
+  * Add python3-sphinx to build dependencies.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sun, 24 Sep 2017 22:46:16 +0200
+
+pgrouting (2.5.0-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Christoph Berg ]
+  * Add dependency alternative on postgresql-PGVERSION-postgis-2.4.
+  * Clarify -scripts package description; the SQL files are also necessary
+    for the initial installation.
+  * Hardlink identical extension upgrade scripts to cut down installation
+    size.
+
+  [ Bas Couwenberg ]
+  * New upstream release.
+  * Refresh patches.
+  * Prefer PostGIS 2.3 over 2.4 which is currently only in experimental.
+  * Update paths for moved files in copyright file.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Fri, 15 Sep 2017 22:18:11 +0200
+
+pgrouting (2.4.2-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Bump Standards-Version to 4.0.0, no changes.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Wed, 16 Aug 2017 18:16:57 +0200
+
+pgrouting (2.4.1-1) unstable; urgency=medium
+
+  * Team upload.
+  * Move from experimental to unstable.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sun, 18 Jun 2017 18:03:18 +0200
+
+pgrouting (2.4.1-1~exp1) experimental; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Fri, 24 Mar 2017 16:58:30 +0100
+
+pgrouting (2.4.0-1~exp1) experimental; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Update copyright file, changes:
+    - Update copyright years for copyright holders
+    - Update file lists for upstream changes
+  * Update release_notes.rst path for dh_installchangelogs.
+  * Refresh patches.
+  * Update HTML files list in doc-base registration.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Tue, 21 Mar 2017 07:49:55 +0100
+
+pgrouting (2.3.2+ds-2) unstable; urgency=medium
+
+  * Team upload.
+  * Add postgis to build dependencies to limit archs to where it's available.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Tue, 10 Jan 2017 19:34:33 +0100
+
+pgrouting (2.3.2+ds-1) unstable; urgency=medium
+
+  * Team upload.
+  * Move from experimental to unstable.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Mon, 09 Jan 2017 19:20:33 +0100
+
+pgrouting (2.3.2+ds-1~exp1) experimental; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Update copyright file for other CC-BY-SA-3.0 documentation.
+  * Split SQL scripts off into separate arch:all package.
+  * Repack upstream tarball to exclude .gitattributes file,
+    causes changes to the upstream source with git-buildpackage.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sat, 07 Jan 2017 22:25:55 +0100
+
+pgrouting (2.3.1-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sun, 20 Nov 2016 22:11:08 +0100
+
+pgrouting (2.3.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * Change pgversions from 'all' to '9.2+' to match postgis.
+  * Add autopkgtest installability test.
+    (closes: #839127)
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sun, 02 Oct 2016 10:20:16 +0200
+
+pgrouting (2.3.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * Move from experimental to unstable.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Mon, 26 Sep 2016 22:04:24 +0200
+
+pgrouting (2.3.0-1~exp1) experimental; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Drop exception-typo.patch, fixed upstream. Refresh remaining patch.
+  * Update copyright file, changes:
+    - Add additional copyright holders
+    - Add license & copyright for fix_typos.sh
+    - Drop license & copyright for shooting_star, removed upstream
+  * Update Files & Index for doc-base registration.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Mon, 26 Sep 2016 18:36:41 +0200
+
+pgrouting (2.2.4-2~exp1) experimental; urgency=medium
+
+  * Team upload.
+  * Update packaging for postgresql 9.6 & postgis 2.3.
+  * Add patch to fix 'exception' typo.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sun, 25 Sep 2016 16:19:07 +0200
+
+pgrouting (2.2.4-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Update copyright file, changes:
+    - Change Source URL to GitHub
+    - Fix Upstream-Name capitalization
+  * Drop override for debian-watch-may-check-gpg-signature.
+  * Drop vrp_basic-include-math.patch, applied upstream.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Wed, 10 Aug 2016 00:56:59 +0200
+
+pgrouting (2.2.3-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Drop references from PostLBS from package description.
+  * Add patch to fix vrp_basic build failure (include math.h for ceil).
+
+ -- Bas Couwenberg <sebastic@debian.org>  Mon, 16 May 2016 11:46:05 +0200
+
+pgrouting (2.2.2-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Fri, 29 Apr 2016 12:52:15 +0200
+
+pgrouting (2.2.1-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Drop spelling-errors.patch, applied upstream.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Tue, 19 Apr 2016 09:01:34 +0200
+
+pgrouting (2.2.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Update copyright file, changes:
+    - Update copyright years for various copyright holders
+    - Add license & copyright for sources by Razequl Islam
+    - Add new files by Alexander Neundorf
+    - Add license & copyright for CMake files by Kitware, Inc
+  * Bump Standards-Version to 3.9.8, no changes.
+  * Simplify file glob patterns in doc-base.
+  * Enable verbose make output.
+  * Add patch to fix spelling errors.
+  * Enable all hardening buildflags.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Fri, 08 Apr 2016 01:20:10 +0200
+
+pgrouting (2.1.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * Update watch file to detect 2.1.x releases.
+  * New upstream release.
+  * Update copyright file, changes:
+    - Group copyright holders by license
+    - Simplify glob patterns for CC-BY-SA-3.0 licensed documentation
+    - Add license & copyright for new files
+  * Override dh_install to use --list-missing.
+  * Don't symlink before_node_net1.png, no longer included.
+  * Use libjs-mathjax instead of online version.
+  * Override dh_makeshlibs to exclude usr/lib/postgresql,
+    prevents postinst-has-useless-call-to-ldconfig.
+  * Drop unused lintian override for shlib-calls-exit.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Fri, 05 Feb 2016 12:55:23 +0100
+
+pgrouting (2.0.0-5) unstable; urgency=medium
+
+  * Team upload.
+  * Rename packages for PostgreSQL 9.5.
+  * Use BSL-1.0 SPDX license shortname instead of Boost-1.0.
+  * Fix 'manual' typo in doc-base Title.
+  * Update watch file, changes:
+    - Add common dversionmangle
+    - Handle other tar extensions
+
+ -- Bas Couwenberg <sebastic@debian.org>  Fri, 08 Jan 2016 15:59:39 +0100
+
+pgrouting (2.0.0-4) unstable; urgency=medium
+
+  * Team upload.
+  * Update PostGIS dependency for 2.2.
+  * Update Vcs-Browser URL to use cgit over HTTPS.
+  * Restructure control file with cme, changes:
+    - Bump Standards-Version to 3.9.6, no changes.
+  * Enable parallel builds.
+  * Add non-template control file for git-buildpackage builds.
+  * Add gbp.conf to use pristine-tar by default.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Thu, 10 Dec 2015 09:49:37 +0100
+
+pgrouting (2.0.0-3) unstable; urgency=low
+
+  * Build for multiple PostgreSQL versions (Closes: #757786).
+    + Use pg_buildext where possible.
+    + Call cmake with custom path that all include the PostgreSQL version.
+    + Build documentation and replace duplicate files with symlinks.
+    + Install lintian override for call to exit() in plugin code, only used in
+      a helper method.
+  * Install upstream changelog.
+  * Add lintian override for missing upstream GPG signature.
+  * Use emtpy override_dh_sphinxdoc-arch to prevent dh_sphinxdoc from running
+    in binary-arch.
+
+ -- Michael Fladischer <FladischerMichael@fladi.at>  Mon, 18 Aug 2014 12:10:01 +0200
+
+pgrouting (2.0.0-2) unstable; urgency=low
+
+  * Omit "--with sphinxdoc" when building binary-arch.
+
+ -- Michael Fladischer <FladischerMichael@fladi.at>  Mon, 28 Oct 2013 09:08:23 +0100
+
+pgrouting (2.0.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #714831).
+
+ -- Michael Fladischer <FladischerMichael@fladi.at>  Thu, 03 Oct 2013 10:55:42 +0200

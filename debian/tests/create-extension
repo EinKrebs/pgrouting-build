@@ -1,0 +1,12 @@
+#!/bin/sh
+
+set -eu
+
+for v in $(pg_buildext installed-versions); do
+	echo "### $v ###"
+	pg_virtualenv -v $v <<-EOF
+		set -eux
+		psql -c 'CREATE EXTENSION postgis'
+		psql -c 'CREATE EXTENSION pgrouting'
+	EOF
+done
